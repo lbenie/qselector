@@ -17,5 +17,5 @@ stages:
 
 jobs:
   include:
-    if: type IN (push, pull_request)
     - stage: "test"
+      if: type IN (push, pull_request)
