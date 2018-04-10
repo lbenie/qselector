@@ -1,0 +1,36 @@
+{
+  "name": "qselect",
+  "version": "0.0.1",
+  "author": {
+    "name": "Lucien Bénié",
+    "email": "lucien.benie@gmail.com",
+    "url": "https://github.com/lbenie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lbenie/qselect"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "cross-env BABEL_ENV=staging jest --config jest.config.js",
+    "test:dev": "cross-env BABEL_ENV=test jest --config jest.config.js --watch"
+  },
+  "dependencies": {
+    "is-dom": "^1.0.9",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3"
+  }
+}

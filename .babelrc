@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "env", {
+        "targets": [
+          "last 2 versions"
+        ]
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "env"
+        ]
+      ]
+    },
+    "staging": {
+      "presets": [
+        [
+          "env"
+        ]
+      ]
+    }
+  }
+}
