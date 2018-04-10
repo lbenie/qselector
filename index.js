@@ -25,10 +25,10 @@ const $ = (selector, context = undefined) => {
 
 const $$ = (selector, context = undefined) => {
   if (context) {
-    const root = document.querySelectorAll(context);
+    const root = document.querySelector(selector);
 
     if (isDom(root)) {
-      return isSelectorString(selector) ? [...root.querySelectorAll(selector)] : undefined;
+      return [...root.querySelectorAll(context)];
     }
   } else if (isSelectorString(selector)) {
     return [...document.querySelectorAll(selector)];
