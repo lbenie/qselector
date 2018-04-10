@@ -3,7 +3,6 @@ language: node_js
 dist: trusty
 
 node_js:
-  - 8
   - 9
 
 cache:
@@ -18,5 +17,3 @@ stages:
 jobs:
   include:
     - stage: "test"
-      dist: trusty
-      script: "yarn test"
