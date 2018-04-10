@@ -1,14 +1,12 @@
 import isString from 'lodash/isString';
 import isDom from 'is-dom';
 
-const errorSelector = 'Selector must be a string';
-
 const isSelectorString = (selector) => {
   if (isString(selector)) {
     return true;
   }
 
-  throw new Error(errorSelector);
+  throw new Error('Selector must be a string');
 };
 
 const $ = (selector, context = undefined) => {
