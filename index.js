@@ -9,12 +9,12 @@ const isSelectorString = (selector) => {
   throw new Error('Selector must be a string');
 };
 
-const $ = (selector, context = undefined) => {
-  if (context) {
-    const root = document.querySelector(context);
+const $ = (selector, rootNode = undefined) => {
+  if (rootNode) {
+    const root = document.querySelector(rootNode);
 
-    if (isDom(root)) {
-      return isSelectorString(selector) ? root.querySelector(selector) : undefined;
+    if (isDom(root) && isSelectorString(selector)) {
+      return root.querySelector(selector);
     }
   } else if (isSelectorString(selector)) {
     return document.querySelector(selector);
@@ -23,12 +23,12 @@ const $ = (selector, context = undefined) => {
   return undefined;
 };
 
-const $$ = (selector, context = undefined) => {
-  if (context) {
+const $$ = (selector, rootNode = undefined) => {
+  if (rootNode) {
     const root = document.querySelector(selector);
 
-    if (isDom(root)) {
-      return [...root.querySelectorAll(context)];
+    if (isDom(root) && isSelectorString(rootNode)) {
+      return [...root.querySelectorAll(rootNode)];
     }
   } else if (isSelectorString(selector)) {
     return [...document.querySelectorAll(selector)];

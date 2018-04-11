@@ -28,9 +28,14 @@ describe('qselect', () => {
       expect(node.innerHTML).toBe('t');
     });
 
-    it('should get a null if selector exists and the context does not exist', () => {
+    it('should get an undefined if selector exists and the context does not exist', () => {
       const node = $('span', 'input');
       expect(node).toBeUndefined();
+    });
+
+    it('should get a null if selector does not exist and the context exists', () => {
+      const node = $('input', 'span');
+      expect(node).toBeNull();
     });
 
     it('should be a dom element if selector exists', () => {
@@ -46,6 +51,12 @@ describe('qselect', () => {
     it('should be nuill if selector does not exist', () => {
       const node = $('input');
       expect(isDom(node)).toBeFalsy();
+    });
+
+    it('should throw if selector is not a dom string and context exists', () => {
+      expect(() => {
+        $(true, 'span');
+      }).toThrowError(errorSelector);
     });
 
     it('should throw if selector is Nan', () => {
@@ -146,6 +157,17 @@ describe('qselect', () => {
     it('should get an array of dom nodes if selector exists and context exists', () => {
       const node = $$('.lol', 'span');
       expect(node.length).toBeGreaterThanOrEqual(1);
+    });
+
+    it('should be undefined if selector is not a dom string and context exists', () => {
+      const node = $$(true, 'span');
+      expect(node).toBeUndefined();
+    });
+
+    it('should throw if selector exists and context is not a dom string', () => {
+      expect(() => {
+        $$('span', true);
+      }).toThrowError(errorSelector);
     });
 
     it('should throw if selector is Nan', () => {
