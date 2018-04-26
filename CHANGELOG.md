@@ -1,3 +1,10 @@
+<a name="1.0.1"></a>
+## <small>1.0.1 (2018-04-26)</small>
+
+* fix: test not importing the file after being moved to its own folder ([1b8dc3e](https://github.com/lbenie/qselect/commit/1b8dc3e))
+
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2018-04-26)
 
