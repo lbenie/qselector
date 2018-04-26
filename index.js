@@ -1,41 +1,64 @@
-import isString from 'lodash/isString';
 import isDom from 'is-dom';
 
-const isSelectorString = (selector) => {
-  if (isString(selector)) {
-    return true;
-  }
-
-  throw new Error('Selector must be a string');
+const errorSelector = 'Selector does not exists in the DOM';
+const queryType = {
+  single: '$',
+  multiple: '$$',
 };
 
-const $ = (selector, rootNode = undefined) => {
-  if (rootNode) {
-    const root = document.querySelector(rootNode);
+const isNan = (el, selector) => {
+  const result = [
+    Number.isNaN(el),
+    Number.isNaN(selector),
+  ];
 
-    if (isDom(root) && isSelectorString(selector)) {
-      return root.querySelector(selector);
+  return result.find(x => x === true);
+};
+
+const isInfinity = (el, selector) => {
+  const result = [
+    Number.isFinite(el),
+    Number.isFinite(selector),
+  ];
+
+  return result.find(x => x === false);
+};
+
+const errorHanler = (isSingle, { el, selector }) => {
+  const root = document.querySelector(el);
+
+  if (isNan(el, selector) || isInfinity(el, selector)) {
+    throw new Error(errorSelector);
+  } else if (isSingle) {
+    return selector ?
+      isDom(root.querySelector(selector)) :
+      isDom(root);
+  }
+
+  return selector ?
+    isDom(...root.querySelectorAll(selector)) :
+    isDom(...document.querySelectorAll(el));
+};
+
+
+const core = (type, ...args) => {
+  const isSingle = type === queryType.single;
+  const [el, selector] = args;
+  const root = document.querySelector(el);
+
+  if (errorHanler(isSingle, { el, selector })) {
+    if (selector) {
+      return isSingle ? root.querySelector(selector) : [...root.querySelectorAll(selector)];
     }
-  } else if (isSelectorString(selector)) {
-    return document.querySelector(selector);
+    return isSingle ? root : [...document.querySelectorAll(el)];
   }
 
-  return undefined;
+  throw new Error(errorSelector);
 };
 
-const $$ = (selector, rootNode = undefined) => {
-  if (rootNode) {
-    const root = document.querySelector(selector);
+const $ = (el, selector = undefined) => core(queryType.single, el, selector);
 
-    if (isDom(root) && isSelectorString(rootNode)) {
-      return [...root.querySelectorAll(rootNode)];
-    }
-  } else if (isSelectorString(selector)) {
-    return [...document.querySelectorAll(selector)];
-  }
-
-  return undefined;
-};
+const $$ = (el, selector = undefined) => core(queryType.multiple, el, selector);
 
 export {
   $,

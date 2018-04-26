@@ -2,7 +2,7 @@ import isDom from 'is-dom';
 import { $, $$ } from '../';
 
 const invalidSelector = 'The string "", is not a valid CSS selector';
-const errorSelector = 'Selector must be a string';
+const errorSelector = 'Selector does not exists in the DOM';
 
 describe('qselect', () => {
   beforeAll(() => {
@@ -18,222 +18,360 @@ describe('qselect', () => {
   });
 
   describe('$', () => {
-    it('should get a dom node if selector exists', () => {
-      const node = $('span');
-      expect(node.innerHTML).toBe('s');
+    it('should be a function', () => {
+      expect(typeof $).toEqual('function');
     });
 
-    it('should get a dom node if selector exists and the context exists', () => {
-      const node = $('span', '.lol');
-      expect(node.innerHTML).toBe('t');
+    describe('$(el)', () => {
+      it('should get a node if el exists in the DOM', () => {
+        const node = $('span');
+
+        expect(node.innerHTML).toBe('s');
+      });
+
+      it('should be a node if el exists in the DOM', () => {
+        const node = $('div');
+
+        expect(isDom(node)).toBeTruthy();
+      });
+
+      it('should throw if el does not exist in the DOM', () => {
+        expect(() => {
+          $('input');
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is undefined', () => {
+        expect(() => {
+          $(undefined);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should be null if el is null', () => {
+        expect(() => {
+          $(null);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is Nan', () => {
+        expect(() => {
+          $(NaN);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is Infinity', () => {
+        expect(() => {
+          $(Infinity);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is a Boolean', () => {
+        expect(() => {
+          $(Boolean);
+        }).toThrowError();
+      });
+
+      it('should throw if el is an empty Object', () => {
+        expect(() => {
+          $({});
+        }).toThrowError();
+      });
+
+      it('should throw if el is a RegExp', () => {
+        expect(() => {
+          $(new RegExp());
+        }).toThrowError();
+      });
+
+      it('should throw if el is a Date', () => {
+        expect(() => {
+          $(new Date());
+        }).toThrowError();
+      });
+
+      it('should throw if el is an Array', () => {
+        expect(() => {
+          $([]);
+        }).toThrowError();
+      });
+
+      it('should throw if el is an Integer', () => {
+        expect(() => {
+          $(1);
+        }).toThrowError();
+      });
+
+      it('should throw if el is an empty string', () => {
+        expect(() => {
+          $('');
+        }).toThrowError(invalidSelector);
+      });
     });
 
-    it('should get an undefined if selector exists and the context does not exist', () => {
-      const node = $('span', 'input');
-      expect(node).toBeUndefined();
-    });
+    describe('$(el, selector)', () => {
+      it('should get a node if el exists and the selector exists in the DOM', () => {
+        const node = $('.lol', 'span');
 
-    it('should get a null if selector does not exist and the context exists', () => {
-      const node = $('input', 'span');
-      expect(node).toBeNull();
-    });
+        expect(node.innerHTML).toBe('t');
+      });
 
-    it('should be a dom element if selector exists', () => {
-      const node = $('div');
-      expect(isDom(node)).toBeTruthy();
-    });
+      it('should be a node if el exists and the selector exists in the DOM', () => {
+        const node = $('div', 'span');
 
-    it('should get a null if selector does not exist', () => {
-      const node = $('input');
-      expect(node).toBeNull();
-    });
+        expect(isDom(node)).toBeTruthy();
+      });
 
-    it('should be nuill if selector does not exist', () => {
-      const node = $('input');
-      expect(isDom(node)).toBeFalsy();
-    });
+      it('should be a node if el exists and selector is undefined', () => {
+        const node = $('div', undefined);
 
-    it('should throw if selector is not a dom string and context exists', () => {
-      expect(() => {
-        $(true, 'span');
-      }).toThrowError(errorSelector);
-    });
+        expect(isDom(node)).toBeTruthy();
+      });
 
-    it('should throw if selector is Nan', () => {
-      expect(() => {
-        $(NaN);
-      }).toThrowError(errorSelector);
-    });
+      it('should be a node if el exists and selector is null', () => {
+        const node = $('div', null);
 
-    it('should throw if selector is Infinity', () => {
-      expect(() => {
-        $(Infinity);
-      }).toThrowError(errorSelector);
-    });
+        expect(isDom(node)).toBeTruthy();
+      });
 
-    it('should throw if selector is a Boolean', () => {
-      expect(() => {
-        $(Boolean);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists and the selector does not exist in the DOM', () => {
+        expect(() => {
+          $('span', 'input');
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is an empty Object', () => {
-      expect(() => {
-        $({});
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is NaN', () => {
+        expect(() => {
+          $('div', NaN);
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is a RegExp', () => {
-      expect(() => {
-        $(new RegExp());
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is Infinity', () => {
+        expect(() => {
+          $('.lol', Infinity);
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is a Date', () => {
-      expect(() => {
-        $(new Date());
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is a Boolean', () => {
+        expect(() => {
+          $('.lol', Boolean);
+        }).toThrow();
+      });
 
-    it('should throw if selector is an Array', () => {
-      expect(() => {
-        $([]);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is an empty Object', () => {
+        expect(() => {
+          $('.lol', {});
+        }).toThrow();
+      });
 
-    it('should throw if selector is an Integer', () => {
-      expect(() => {
-        $(1);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is a RegExp', () => {
+        expect(() => {
+          $('.lol', new RegExp());
+        }).toThrow();
+      });
 
-    it('should throw if selector is undefined', () => {
-      expect(() => {
-        $(undefined);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is a Date', () => {
+        expect(() => {
+          $('.lol', new Date());
+        }).toThrow();
+      });
 
-    it('should throw if selector is null', () => {
-      expect(() => {
-        $(null);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is a Array', () => {
+        expect(() => {
+          $('.lol', []);
+        }).toThrow();
+      });
 
-    it('should throw if selector is an empty string', () => {
-      expect(() => {
-        $('');
-      }).toThrowError(invalidSelector);
-    });
-
-    it('should get a dom node within the context if context is a dom node', () => {
-      const node = $('span', '.lol');
-
-      expect(isDom(node)).toBeTruthy();
-      expect(node.innerHTML).toBe('t');
+      it('should throw if el exists in the DOM and selector is an Integer', () => {
+        expect(() => {
+          $('.lol', 1);
+        }).toThrow();
+      });
     });
   });
 
   describe('$$', () => {
-    it('should get an array', () => {
-      const node = $$('div');
-      expect(Array.isArray(node)).toBeTruthy();
+    it('should be a function', () => {
+      expect(typeof $$).toBe('function');
     });
 
-    it('should get an empty array if selector does not exist', () => {
-      const node = $$('input');
-      expect(node).toHaveLength(0);
+    describe('$$(el)', () => {
+      it('should be a node list if el exists in the DOM', () => {
+        const node = $$('span');
+        expect(node.length).toBeGreaterThanOrEqual(1);
+      });
+
+      it('should be an array if el exists in the DOM', () => {
+        const node = $$('div');
+        expect(Array.isArray(node)).toBeTruthy();
+      });
+
+      it('should throw if el does not exist in the DOM', () => {
+        expect(() => {
+          $$('input');
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is undefined', () => {
+        expect(() => {
+          $$(undefined);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is null', () => {
+        expect(() => {
+          $$(null);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is Nan', () => {
+        expect(() => {
+          $$(NaN);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is Infinity', () => {
+        expect(() => {
+          $$(Infinity);
+        }).toThrowError(errorSelector);
+      });
+
+      it('should throw if el is a Boolean', () => {
+        expect(() => {
+          $$(Boolean);
+        }).toThrow();
+      });
+
+      it('should throw if el is an empty Object', () => {
+        expect(() => {
+          $$({});
+        }).toThrow();
+      });
+
+      it('should throw if el is a RegExp', () => {
+        expect(() => {
+          $$(new RegExp());
+        }).toThrow();
+      });
+
+      it('should throw if el is a Date', () => {
+        expect(() => {
+          $$(new Date());
+        }).toThrow();
+      });
+
+      it('should throw if el is an Array', () => {
+        expect(() => {
+          $$([]);
+        }).toThrow();
+      });
+
+      it('should throw if el is an Integer', () => {
+        expect(() => {
+          $$(1);
+        }).toThrow();
+      });
+
+      it('should throw if el is an empty string', () => {
+        expect(() => {
+          $$('');
+        }).toThrowError(invalidSelector);
+      });
     });
 
-    it('should be an empty array if selector exists and context does not exist', () => {
-      const node = $$('.lol', 'input');
-      expect(node).toHaveLength(0);
-    });
+    describe('$$(el, selector)', () => {
+      it('should be a node list if el exists and selector exists in the DOM', () => {
+        const node = $$('div', 'span');
+        expect(node.length).toBeGreaterThanOrEqual(1);
+      });
 
-    it('should get an array of dom nodes if selector exists', () => {
-      const node = $$('div');
-      expect(node.length).toBeGreaterThanOrEqual(1);
-    });
+      it('should throw if el exists and selector does not exist in the DOM', () => {
+        expect(() => {
+          $$('div', 'input');
+        }).toThrowError(errorSelector);
+      });
 
-    it('should get an array of dom nodes if selector exists and context exists', () => {
-      const node = $$('.lol', 'span');
-      expect(node.length).toBeGreaterThanOrEqual(1);
-    });
+      it('should be an array if el exists and selector exists in the DOM', () => {
+        const node = $$('div', 'span');
+        expect(Array.isArray(node)).toBeTruthy();
+      });
 
-    it('should be undefined if selector is not a dom string and context exists', () => {
-      const node = $$(true, 'span');
-      expect(node).toBeUndefined();
-    });
+      it('should throw if el is undefined and selector is undefined', () => {
+        expect(() => {
+          $$(undefined, undefined);
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector exists and context is not a dom string', () => {
-      expect(() => {
-        $$('span', true);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el is null and selector is null', () => {
+        expect(() => {
+          $$(null, null);
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is Nan', () => {
-      expect(() => {
-        $$(NaN);
-      }).toThrowError(errorSelector);
-    });
+      it('should be a node list if el exists and selector is undefined', () => {
+        const node = $$('div', undefined);
 
-    it('should throw if selector is Infinity', () => {
-      expect(() => {
-        $$(Infinity);
-      }).toThrowError(errorSelector);
-    });
+        expect(node.length).toBeGreaterThanOrEqual(1);
+      });
 
-    it('should throw if selector is a Boolean', () => {
-      expect(() => {
-        $$(Boolean);
-      }).toThrowError(errorSelector);
-    });
+      it('should be a node list if el exists and selector is null', () => {
+        const node = $$('div', null);
 
-    it('should throw if selector is an empty Object', () => {
-      expect(() => {
-        $$({});
-      }).toThrowError(errorSelector);
-    });
+        expect(node.length).toBeGreaterThanOrEqual(1);
+      });
 
-    it('should throw if selector is a RegExp', () => {
-      expect(() => {
-        $$(new RegExp());
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists and the selector does not exist in the DOM', () => {
+        expect(() => {
+          $$('span', 'input');
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is a Date', () => {
-      expect(() => {
-        $$(new Date());
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is NaN', () => {
+        expect(() => {
+          $$('div', NaN);
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is an Array', () => {
-      expect(() => {
-        $$([]);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is Infinity', () => {
+        expect(() => {
+          $$('.lol', Infinity);
+        }).toThrowError(errorSelector);
+      });
 
-    it('should throw if selector is an Integer', () => {
-      expect(() => {
-        $$(1);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is a Boolean', () => {
+        expect(() => {
+          $$('.lol', Boolean);
+        }).toThrow();
+      });
 
-    it('should throw if selector is undefined', () => {
-      expect(() => {
-        $$(undefined);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is an empty Object', () => {
+        expect(() => {
+          $$('.lol', {});
+        }).toThrow();
+      });
 
-    it('should throw if selector is null', () => {
-      expect(() => {
-        $$(null);
-      }).toThrowError(errorSelector);
-    });
+      it('should throw if el exists in the DOM and selector is a RegExp', () => {
+        expect(() => {
+          $$('.lol', new RegExp());
+        }).toThrow();
+      });
 
-    it('should throw if selector is an empty string', () => {
-      expect(() => {
-        $$('');
-      }).toThrowError(invalidSelector);
+      it('should throw if el exists in the DOM and selector is a Date', () => {
+        expect(() => {
+          $$('.lol', new Date());
+        }).toThrow();
+      });
+
+      it('should throw if el exists in the DOM and selector is a Array', () => {
+        expect(() => {
+          $$('.lol', []);
+        }).toThrow();
+      });
+
+      it('should throw if el exists in the DOM and selector is an Integer', () => {
+        expect(() => {
+          $$('.lol', 1);
+        }).toThrow();
+      });
     });
   });
 });
