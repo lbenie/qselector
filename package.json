@@ -1,6 +1,6 @@
 {
   "name": "qselector",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Aliases for querySelector & querySelectorAll",
   "keywords": [
     "query",
