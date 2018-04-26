@@ -1,5 +1,5 @@
 import isDom from 'is-dom';
-import { $, $$ } from '../';
+import { $, $$ } from '../lib';
 
 const invalidSelector = 'The string "", is not a valid CSS selector';
 const errorSelector = 'Selector does not exists in the DOM';
