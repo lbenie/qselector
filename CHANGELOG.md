@@ -1,3 +1,10 @@
+<a name="1.0.2"></a>
+## <small>1.0.2 (2018-04-26)</small>
+
+* rename project to qselector [skip ci] ([e671029](https://github.com/lbenie/qselect/commit/e671029))
+
+
+
 <a name="1.0.1"></a>
 ## <small>1.0.1 (2018-04-26)</small>
 
