@@ -18,7 +18,7 @@ jobs:
   - stage: deploy
     if: tag IS present
     deploy:
-      skip_clean: true
+      skip_cleanup: true
       provider: npm
       email: lucien.benie@gmail.com
       api_key:
