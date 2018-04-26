@@ -1,3 +1,12 @@
+<a name="1.0.3"></a>
+## <small>1.0.3 (2018-04-26)</small>
+
+* bump patch [ci skip] ([13836ce](https://github.com/lbenie/qselector/commit/13836ce))
+* fix deployment [ci-skip] ([540f48b](https://github.com/lbenie/qselector/commit/540f48b))
+* fix url's in package.json [ci skip] ([2ee133a](https://github.com/lbenie/qselector/commit/2ee133a))
+
+
+
 <a name="1.0.2"></a>
 ## <small>1.0.2 (2018-04-26)</small>
 
