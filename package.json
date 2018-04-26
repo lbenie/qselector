@@ -11,7 +11,7 @@
     "browser"
   ],
   "files": [
-    "index.js"
+    "lib/index.js"
   ],
   "bugs": {
     "url": "https://github.com/lbenie/qselect/issues"
