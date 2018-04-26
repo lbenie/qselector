@@ -1,8 +1,8 @@
-# qselect
+# qselector
 
-[![Build Status](https://travis-ci.org/lbenie/qselect.svg?branch=master)](https://travis-ci.org/lbenie/qselect)
+[![Build Status](https://travis-ci.org/lbenie/qselector.svg?branch=master)](https://travis-ci.org/lbenie/qselector)
 
-qselect (query selector) is just a small package to create aliases for `querySelector` and `querySelectorAll` to `$` and `$$` respectively.
+qselector (query selector) is just a small package to create aliases for `querySelector` and `querySelectorAll` to `$` and `$$` respectively.
 
 ## API
 The api is pretty simple. Each functions receive a DOMElement and returns either the node or a list of node.
@@ -56,13 +56,13 @@ Returns the list of all matches of `selector` on `el` and its children
 
 ## Installation
 ```bash
-  $ yarn add qselect
+  $ yarn add qselector
 ```
 
 or
 
 ```bash
-  $ npm install qselect --save
+  $ npm install qselector --save
 ```
 
 ## License

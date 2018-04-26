@@ -1,5 +1,5 @@
 {
-  "name": "qselect",
+  "name": "qselector",
   "version": "1.0.1",
   "description": "Aliases for querySelector & querySelectorAll",
   "keywords": [
