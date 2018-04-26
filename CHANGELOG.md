@@ -1,3 +1,10 @@
+<a name="1.0.4"></a>
+## <small>1.0.4 (2018-04-26)</small>
+
+* chore: travis add skip_clean ([7046e4b](https://github.com/lbenie/qselector/commit/7046e4b))
+
+
+
 <a name="1.0.3"></a>
 ## <small>1.0.3 (2018-04-26)</small>
 
