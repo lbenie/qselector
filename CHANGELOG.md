@@ -1,3 +1,12 @@
+<a name="1.0.6"></a>
+## <small>1.0.6 (2018-04-26)</small>
+
+* chore: bump minor ([f5433e1](https://github.com/lbenie/qselector/commit/f5433e1))
+* chore: fix travis skip_cleanup ([a701ca1](https://github.com/lbenie/qselector/commit/a701ca1))
+* chores: add node 10 to travis ([ec46c5f](https://github.com/lbenie/qselector/commit/ec46c5f))
+
+
+
 <a name="1.0.5"></a>
 ## <small>1.0.5 (2018-04-26)</small>
 
