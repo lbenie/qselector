@@ -23,4 +23,4 @@ jobs:
         secure: B5y6XxSeuqubMOGp4fluOl/xJDey9Tt14rXKXSfeqkGXlZ8YtjdmWjNyK+WCaRAzOLsxXLum5gYmQWotOGuM+QCg85ExIyWp3wGOe3BQC7Vq94LSgCG65rRHgBx/evIQpdFSTfTKGWT3i0RwrQKcrIIUaJR8ltE7cvxyiQmHSMGW0DstcnIZk0nW80rLOnWyl3wfmdkgtQENF9K/vP3GoSXvRFsSx4FJun4RhQ621qW9YFzkuF1y0LJSsoAuFkvtg7NcJyGipfVYVMtOEhBycTKt+YcgSJHH0Rb7PX++V9VyDWypABNz3lU1pNYV4dohsew8x2H23kvLzns9uMKYlWJnZv54r1/fIYiUA7IBvUa1oT+AWVqrW9SQtpG5u89Vd2VXu1qFMa4KUUXB1z/Mp/H7xjuu4JyBca4NcDXRGXcklqMYvMj6gufdkM/m6EbjrxhOhSn8lpfP6ve9ogYEKs3dwEcoanLca5z/KDWkbmRSYWivDxPexX76C7TTvrJ5CUm0yUD1ifBqZRGrUATvVolg4rwh9hTNBm41F62XPmj7MhVcZ/YtY0qfJ3S0mQE5YnHSLEVuus6UTzwuxYALd2wCvh/y8+mQt3LlGRW9T7CHW620pfLxhtIeH3CtXfH3JivKEigwovM9d7QBFlAKDyLMHoB6Lmu3qoC0jwNZ6Qc=
       on:
         tags: true
-        repo: lbenie/qselect
+        repo: lbenie/qselector
