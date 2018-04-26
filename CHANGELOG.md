@@ -1,3 +1,11 @@
+<a name="1.0.5"></a>
+## <small>1.0.5 (2018-04-26)</small>
+
+* chore: bump minor ([ce5710d](https://github.com/lbenie/qselector/commit/ce5710d))
+* add post-merge hook ([d9bcd8b](https://github.com/lbenie/qselector/commit/d9bcd8b))
+
+
+
 <a name="1.0.4"></a>
 ## <small>1.0.4 (2018-04-26)</small>
 
