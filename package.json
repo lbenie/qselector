@@ -14,9 +14,9 @@
     "lib/index.js"
   ],
   "bugs": {
-    "url": "https://github.com/lbenie/qselect/issues"
+    "url": "https://github.com/lbenie/qselector/issues"
   },
-  "homepage": "https://github.com/lbenie/qselect#readme",
+  "homepage": "https://github.com/lbenie/qselector#readme",
   "author": {
     "name": "Lucien Bénié",
     "email": "lucien.benie@gmail.com",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lbenie/qselect"
+    "url": "https://github.com/lbenie/qselector"
   },
   "license": "MIT",
   "scripts": {
