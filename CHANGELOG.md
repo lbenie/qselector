@@ -1,6 +1,14 @@
+<a name="1.1.4"></a>
+## <small>1.1.4 (2018-04-27)</small>
+
+* fix: gulpfile conventional-github-releaser ([c890672](https://github.com/lbenie/qselector/commit/c890672))
+
+
+
 <a name="1.1.3"></a>
 ## <small>1.1.3 (2018-04-27)</small>
 
+* docs(changelog): bumping version to 1.1.3 ([4bdc5f1](https://github.com/lbenie/qselector/commit/4bdc5f1))
 
 
 
