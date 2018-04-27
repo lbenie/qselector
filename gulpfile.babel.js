@@ -13,7 +13,7 @@ require('dotenv').config();
 const version = () => JSON.parse(fs.readFileSync('./package.json', 'utf-8')).version;
 const opts = minimist(process.argv.slice(2), {
   semver: process.env.SEMVER || 'patch',
-  preset: process.env.preset || 'eslint',
+  preset: process.env.PRESET || 'eslint',
   token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN || '',
 });
 
