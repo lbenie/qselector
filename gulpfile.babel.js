@@ -1,6 +1,5 @@
 import gulp from 'gulp';
 import changelog from 'gulp-conventional-changelog';
-import github from 'conventional-github-releaser';
 import git from 'gulp-git';
 import minimist from 'minimist';
 import bump from 'gulp-bump';
@@ -8,6 +7,7 @@ import log from 'fancy-log';
 import runSequence from 'run-sequence';
 import fs from 'fs';
 
+const github = require('conventional-github-releaser');
 require('dotenv').config();
 
 const version = () => JSON.parse(fs.readFileSync('./package.json', 'utf-8')).version;
