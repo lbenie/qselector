@@ -35,8 +35,7 @@
     "commit": "git-cz",
     "release-major": "gulp release --semver major",
     "release-minor": "gulp release --semver minor",
-    "release-patch": "gulp release",
-    "rl": "gulp mini --semver minor"
+    "release-patch": "gulp release"
   },
   "dependencies": {
     "is-dom": "^1.0.9"
