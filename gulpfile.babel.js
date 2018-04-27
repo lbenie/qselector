@@ -20,7 +20,7 @@ const opts = minimist(process.argv.slice(2), {
 
 gulp.task('changelog', () => gulp
   .src('CHANGELOG.md', { buffer: false })
-  .pipe(changelog({ preset: opts.preset, releaseCount: 0 }))
+  .pipe(changelog({ preset: process.env.PRESET, releaseCount: 0 }))
   .pipe(gulp.dest('.')));
 
 gulp.task('github-release', done =>
