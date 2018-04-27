@@ -1,3 +1,11 @@
+<a name="1.1.1"></a>
+## <small>1.1.1 (2018-04-27)</small>
+
+* bump minor ([f74cf42](https://github.com/lbenie/qselector/commit/f74cf42))
+* chore: travis and npm package [skip ci] ([007d9f8](https://github.com/lbenie/qselector/commit/007d9f8))
+
+
+
 <a name="1.1.0"></a>
 ## 1.1.0 (2018-04-27)
 
