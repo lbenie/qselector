@@ -1,3 +1,12 @@
+<a name="1.1.0"></a>
+## 1.1.0 (2018-04-27)
+
+* add stryker badge to readme ([0a550df](https://github.com/lbenie/qselector/commit/0a550df))
+* add stryker mutation testing ([422a31b](https://github.com/lbenie/qselector/commit/422a31b))
+* add templates for contributions and pr/issues [skip-ci] ([edf08ed](https://github.com/lbenie/qselector/commit/edf08ed))
+
+
+
 <a name="1.0.6"></a>
 ## <small>1.0.6 (2018-04-26)</small>
 
