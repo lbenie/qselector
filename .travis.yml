@@ -11,6 +11,9 @@ cache:
 stages:
 - test
 - deploy
+notifications:
+  email:
+    on_failure: always
 jobs:
   include:
   - stage: test
@@ -26,3 +29,6 @@ jobs:
       on:
         tags: true
         repo: lbenie/qselector
+env:
+  global:
+    secure: axxQ9xbVZ3lhLJdZ3B4/ougsPDj/fwNhk/X5tDrbraZqUD32kBpiV9E6EeX3PoFiBv/DCfH1bhfCFtUGei532TGWpeTAToX7rSmd6gCd+LLQWZ/rI1zzBERoreTMCPT3U7GNblMMuCzgvauVzn5SLs9lgAHJYlZBm0PBmB2XCJNDRg06EEQpOpgc1vur7WR2BgMWy9ndRoXALPZj7xn97DznHvDlZsxrlRMafuwexogMoNp4wxz+uXLOQHaBhdtGy2MSJqI7RvosfQwt6F/qCI9KsoH9PDCtlWPBpwlMKVJPGz9sUUSnvZ4F14X6MfnicDYF7tMemL4nSxCldo48aBLVI9RbxHbz1M5HPx8afsMot0YQLMyd1MioSxXatwtHhzyzalvcmn50e9SvjdG4CeGi9iq43KH8yXOwQ0eaift6LzqmzgrHG4siWh8PWlKxKCymx6BaBIyGCltVC374Ft7UCYKovXaQd/zusUMQn6EJ2e43fOKG0pwpgvCXkGvKzlX7hw4sYKGiZ7LhrVCRvd0zATfY2Fee4ISjemc6VK1D+YfIqSB6qJFSz90FoQeUxPk6mzEGfXNfy4t5HfD0fSzxYhjla2Fadv2jU8nrNTWm0g3wy39yF5zOOzXtOQxbAzl+BG4+DyuBw06fUanp9N7kEcm/PJf0VnhWV0PN6Ig=
