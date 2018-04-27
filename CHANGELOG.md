@@ -1,6 +1,14 @@
+<a name="1.1.7"></a>
+## <small>1.1.7 (2018-04-27)</small>
+
+* chore: fix gulpfile changelog preset ([1fe20cc](https://github.com/lbenie/qselector/commit/1fe20cc))
+
+
+
 <a name="1.1.6"></a>
 ## <small>1.1.6 (2018-04-27)</small>
 
+* docs(changelog): bumping version to 1.1.6 ([6a8730f](https://github.com/lbenie/qselector/commit/6a8730f))
 * chore: fix fancy log usage ([ecf790f](https://github.com/lbenie/qselector/commit/ecf790f))
 * chore: npm remove useless script ([f6bf1b2](https://github.com/lbenie/qselector/commit/f6bf1b2))
 
