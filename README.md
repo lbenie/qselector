@@ -1,6 +1,7 @@
 # qselector
 
 [![Build Status](https://travis-ci.org/lbenie/qselector.svg?branch=master)](https://travis-ci.org/lbenie/qselector)
+[![Mutation testing badge](https://badge.stryker-mutator.io/github.com/lbenie/qselector/master)](https://stryker-mutator.github.io)
 
 qselector (query selector) is just a small package to create aliases for `querySelector` and `querySelectorAll` to `$` and `$$` respectively.
 
