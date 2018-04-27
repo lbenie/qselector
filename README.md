@@ -26,7 +26,7 @@ Returns the first match of `selector` on `el` and its children
   let node = $('div');
   /* node value
     <div class="test">
-      <span>s</span>
+      <span class="test">s</span>
       <span>t</span>
       <div class="retest">
         <span>u</span>
