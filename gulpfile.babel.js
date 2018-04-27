@@ -59,7 +59,7 @@ gulp.task('release', done =>
     if (err) {
       log.error(err.message);
     } else {
-      log.log('RELEASE FINISHED SUCCESSFULLY');
+      log('RELEASE FINISHED SUCCESSFULLY');
     }
     done(err);
   }));
