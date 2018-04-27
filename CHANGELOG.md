@@ -1,6 +1,15 @@
+<a name="1.1.6"></a>
+## <small>1.1.6 (2018-04-27)</small>
+
+* chore: fix fancy log usage ([ecf790f](https://github.com/lbenie/qselector/commit/ecf790f))
+* chore: npm remove useless script ([f6bf1b2](https://github.com/lbenie/qselector/commit/f6bf1b2))
+
+
+
 <a name="1.1.5"></a>
 ## <small>1.1.5 (2018-04-27)</small>
 
+* docs(changelog): bumping version to 1.1.5 ([ae91735](https://github.com/lbenie/qselector/commit/ae91735))
 * chore: fix release process to github ([903fca5](https://github.com/lbenie/qselector/commit/903fca5))
 
 
