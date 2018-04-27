@@ -54,7 +54,7 @@ gulp.task('create-new-tag', done =>
   }));
 
 gulp.task('release', done =>
-  runSequence('bump-version', 'changelog', 'commit-changes', 'push-changes', 'create-new-tag', 'github-release', (err) => {
+  runSequence('bump-version', 'changelog', 'commit-changelog', 'push-changes', 'create-new-tag', 'github-release', (err) => {
     if (err) {
       log.error(err.message);
     } else {
