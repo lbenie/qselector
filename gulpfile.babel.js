@@ -6,16 +6,17 @@ import bump from 'gulp-bump';
 import log from 'fancy-log';
 import runSequence from 'run-sequence';
 import fs from 'fs';
+import github from 'conventional-github-releaser';
+import dotenv from 'dotenv';
 
-const github = require('conventional-github-releaser');
-require('dotenv').config();
+dotenv.config();
 
 const version = () => JSON.parse(fs.readFileSync('./package.json', 'utf-8')).version;
+
 const opts = minimist(process.argv.slice(2), {
   semver: process.env.SEMVER || 'patch',
-  preset: process.env.PRESET || 'eslint',
-  token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN || '',
 });
+
 
 gulp.task('changelog', () => gulp
   .src('CHANGELOG.md', { buffer: false })
@@ -25,8 +26,8 @@ gulp.task('changelog', () => gulp
 gulp.task('github-release', done =>
   github({
     type: 'oauth',
-    token: opts.token,
-  }, { preset: opts.preset }, done));
+    token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN,
+  }, { preset: process.env.PRESET || 'eslint' }, done));
 
 gulp.task('bump-version', () =>
   gulp
@@ -44,7 +45,7 @@ gulp.task('commit-changelog', () => gulp
 gulp.task('push-changes', done => git.push('origin', 'master', done));
 
 gulp.task('create-new-tag', done =>
-  git.tag(`v${version()}`, `Created Tag for version: ${version()}`, (err) => {
+  git.tag(`${version()}`, `Created Tag for version: ${version()}`, (err) => {
     if (err) {
       return done(err);
     }
