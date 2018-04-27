@@ -1,11 +1,18 @@
+<a name="1.1.3"></a>
+## <small>1.1.3 (2018-04-27)</small>
+
+
+
+
 <a name="1.1.2"></a>
 ## <small>1.1.2 (2018-04-27)</small>
 
-* fix: gulpfile preset env ([4bb9155](https://github.com/lbenie/qselector/commit/4bb9155))
-* fix: gulpfile task name ([60ccfe8](https://github.com/lbenie/qselector/commit/60ccfe8))
 * docs: changelog ([895e48c](https://github.com/lbenie/qselector/commit/895e48c))
 * docs: fix readme example [skip ci] ([a67cb44](https://github.com/lbenie/qselector/commit/a67cb44))
+* docs(changelog): bumping version to 1.1.2 ([74b0732](https://github.com/lbenie/qselector/commit/74b0732))
 * docs(readme): add commitizen badge ([247245c](https://github.com/lbenie/qselector/commit/247245c))
+* fix: gulpfile preset env ([4bb9155](https://github.com/lbenie/qselector/commit/4bb9155))
+* fix: gulpfile task name ([60ccfe8](https://github.com/lbenie/qselector/commit/60ccfe8))
 * chore: travis and npm package [skip ci] ([007d9f8](https://github.com/lbenie/qselector/commit/007d9f8))
 * chore(yarn): adds commitizen commitlint and gulp ([3ab3cb9](https://github.com/lbenie/qselector/commit/3ab3cb9))
 * bump minor ([f74cf42](https://github.com/lbenie/qselector/commit/f74cf42))
