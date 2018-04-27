@@ -1,6 +1,14 @@
+<a name="1.1.5"></a>
+## <small>1.1.5 (2018-04-27)</small>
+
+* chore: fix release process to github ([903fca5](https://github.com/lbenie/qselector/commit/903fca5))
+
+
+
 <a name="1.1.4"></a>
 ## <small>1.1.4 (2018-04-27)</small>
 
+* docs(changelog): bumping version to 1.1.4 ([c90ca1c](https://github.com/lbenie/qselector/commit/c90ca1c))
 * fix: gulpfile conventional-github-releaser ([c890672](https://github.com/lbenie/qselector/commit/c890672))
 
 
