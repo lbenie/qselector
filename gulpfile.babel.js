@@ -8,6 +8,9 @@ import runSequence from 'run-sequence';
 import fs from 'fs';
 import github from 'conventional-github-releaser';
 import dotenv from 'dotenv';
+import ts from 'gulp-typescript';
+
+const project = ts.createProject('tsconfig.json');
 
 dotenv.config();
 
@@ -17,6 +20,10 @@ const opts = minimist(process.argv.slice(2), {
   semver: process.env.SEMVER || 'patch',
 });
 
+gulp.task('typescript', () => gulp
+  .src('lib/**/*.ts')
+  .pipe(project())
+  .pipe(gulp.dest('lib')));
 
 gulp.task('changelog', () => gulp
   .src('CHANGELOG.md', { buffer: false })
@@ -55,7 +62,7 @@ gulp.task('create-new-tag', done =>
   }));
 
 gulp.task('release', done =>
-  runSequence('bump-version', 'changelog', 'commit-changelog', 'push-changes', 'create-new-tag', 'github-release', (err) => {
+  runSequence('typescript', 'bump-version', 'changelog', 'commit-changelog', 'push-changes', 'create-new-tag', 'github-release', (err) => {
     if (err) {
       log.error(err.message);
     } else {
