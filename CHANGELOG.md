@@ -1,6 +1,14 @@
+<a name="2.0.0"></a>
+## 2.0.0 (2018-06-01)
+
+* feat: add support for typescript ([9d8dc17](https://github.com/lbenie/qselector/commit/9d8dc17))
+
+
+
 <a name="1.1.7"></a>
 ## <small>1.1.7 (2018-04-27)</small>
 
+* docs(changelog): bumping version to 1.1.7 ([fbcdb85](https://github.com/lbenie/qselector/commit/fbcdb85))
 * chore: fix gulpfile changelog preset ([1fe20cc](https://github.com/lbenie/qselector/commit/1fe20cc))
 
 
