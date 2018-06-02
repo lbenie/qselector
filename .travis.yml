@@ -18,11 +18,13 @@ notifications:
 jobs:
   include:
   - stage: test
+    script: yarn test
     if: type IN (push, pull_request)
   - stage: deploy
     if: tag IS present
     deploy:
       skip_cleanup: true
+      script: yarn build
       provider: npm
       email: lucien.benie@gmail.com
       api_key:

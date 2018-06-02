@@ -13,7 +13,11 @@
       "dom.iterable",
       "scripthost",
     ],
-    "baseUrl": "."
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true
   },
   "include": [
     "lib/**/*.ts",
