@@ -1,12 +1,21 @@
-<a name="2.0.1"></a>
+## <small>2.0.2 (2018-06-13)</small>
+
+* chore(stryker): fix tests timeout on travis ([839e3c3](https://github.com/lbenie/qselector/commit/839e3c3))
+* chore(travis): add timeout to stryker ([238aa14](https://github.com/lbenie/qselector/commit/238aa14))
+* chore(travis): stryker concurrent test number ([ae09712](https://github.com/lbenie/qselector/commit/ae09712))
+* chore(yarn): upgrade packages ([71fad3d](https://github.com/lbenie/qselector/commit/71fad3d))
+* fix(test): fix tests ([6b6f20d](https://github.com/lbenie/qselector/commit/6b6f20d))
+
+
+
 ## <small>2.0.1 (2018-06-13)</small>
 
+* docs(changelog): bumping version to 2.0.1 ([1751bb0](https://github.com/lbenie/qselector/commit/1751bb0))
 * chore: update typescript, npm and travis configuration files ([aff7bab](https://github.com/lbenie/qselector/commit/aff7bab))
 * chore(npm): fix typings ([382923a](https://github.com/lbenie/qselector/commit/382923a))
 
 
 
-<a name="2.0.0"></a>
 ## 2.0.0 (2018-06-01)
 
 * docs(changelog): bumping version to 2.0.0 ([2fa1cc0](https://github.com/lbenie/qselector/commit/2fa1cc0))
@@ -14,7 +23,6 @@
 
 
 
-<a name="1.1.7"></a>
 ## <small>1.1.7 (2018-04-27)</small>
 
 * docs(changelog): bumping version to 1.1.7 ([fbcdb85](https://github.com/lbenie/qselector/commit/fbcdb85))
@@ -22,7 +30,6 @@
 
 
 
-<a name="1.1.6"></a>
 ## <small>1.1.6 (2018-04-27)</small>
 
 * docs(changelog): bumping version to 1.1.6 ([6a8730f](https://github.com/lbenie/qselector/commit/6a8730f))
@@ -31,7 +38,6 @@
 
 
 
-<a name="1.1.5"></a>
 ## <small>1.1.5 (2018-04-27)</small>
 
 * docs(changelog): bumping version to 1.1.5 ([ae91735](https://github.com/lbenie/qselector/commit/ae91735))
@@ -39,7 +45,6 @@
 
 
 
-<a name="1.1.4"></a>
 ## <small>1.1.4 (2018-04-27)</small>
 
 * docs(changelog): bumping version to 1.1.4 ([c90ca1c](https://github.com/lbenie/qselector/commit/c90ca1c))
@@ -47,14 +52,12 @@
 
 
 
-<a name="1.1.3"></a>
 ## <small>1.1.3 (2018-04-27)</small>
 
 * docs(changelog): bumping version to 1.1.3 ([4bdc5f1](https://github.com/lbenie/qselector/commit/4bdc5f1))
 
 
 
-<a name="1.1.2"></a>
 ## <small>1.1.2 (2018-04-27)</small>
 
 * docs: changelog ([895e48c](https://github.com/lbenie/qselector/commit/895e48c))
@@ -69,7 +72,6 @@
 
 
 
-<a name="1.1.0"></a>
 ## 1.1.0 (2018-04-27)
 
 * docs: bump feature ([fdaa11c](https://github.com/lbenie/qselector/commit/fdaa11c))
@@ -79,7 +81,6 @@
 
 
 
-<a name="1.0.6"></a>
 ## <small>1.0.6 (2018-04-26)</small>
 
 * docs: changelog ([70cf4cb](https://github.com/lbenie/qselector/commit/70cf4cb))
@@ -89,7 +90,6 @@
 
 
 
-<a name="1.0.5"></a>
 ## <small>1.0.5 (2018-04-26)</small>
 
 * docs: changelog ([0a59378](https://github.com/lbenie/qselector/commit/0a59378))
@@ -98,7 +98,6 @@
 
 
 
-<a name="1.0.4"></a>
 ## <small>1.0.4 (2018-04-26)</small>
 
 * docs: changelog [ci skip] ([d904ca4](https://github.com/lbenie/qselector/commit/d904ca4))
@@ -106,7 +105,6 @@
 
 
 
-<a name="1.0.3"></a>
 ## <small>1.0.3 (2018-04-26)</small>
 
 * docs: changelog [ci skip] ([f512112](https://github.com/lbenie/qselector/commit/f512112))
@@ -116,7 +114,6 @@
 
 
 
-<a name="1.0.2"></a>
 ## <small>1.0.2 (2018-04-26)</small>
 
 * rename project to qselector ([7ba9606](https://github.com/lbenie/qselector/commit/7ba9606))
@@ -124,7 +121,6 @@
 
 
 
-<a name="1.0.1"></a>
 ## <small>1.0.1 (2018-04-26)</small>
 
 * docs: changelog ([642b858](https://github.com/lbenie/qselector/commit/642b858))
@@ -132,7 +128,6 @@
 
 
 
-<a name="1.0.0"></a>
 ## 1.0.0 (2018-04-26)
 
 * add babel_env to travis container ([17627e7](https://github.com/lbenie/qselector/commit/17627e7))
