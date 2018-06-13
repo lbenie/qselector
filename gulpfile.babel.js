@@ -48,7 +48,8 @@ gulp.task('commit-changelog', (done) => {
   gulp
     .src('.')
     .pipe(git.add())
-    .pipe(git.commit(`docs(changelog): bumping version to ${version()}`, done));
+    .pipe(git.commit(`docs(changelog): bumping version to ${version()}`));
+  done();
 });
 
 gulp.task('push-changes', done => git.push('origin', 'master', done));

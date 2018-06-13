@@ -1,7 +1,13 @@
+## <small>2.0.6 (2018-06-13)</small>
+
+
+
+
 ## <small>2.0.5 (2018-06-13)</small>
 
-* chore(gulp): fix git commit ([55c2980](https://github.com/lbenie/qselector/commit/55c2980))
 * docs(changelog): bumping version to 2.0.4 ([3021597](https://github.com/lbenie/qselector/commit/3021597))
+* docs(changelog): bumping version to 2.0.5 ([1759f48](https://github.com/lbenie/qselector/commit/1759f48))
+* chore(gulp): fix git commit ([55c2980](https://github.com/lbenie/qselector/commit/55c2980))
 
 
 
