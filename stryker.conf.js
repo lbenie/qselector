@@ -7,7 +7,7 @@ module.exports = (config) => {
     coverageAnalysis: 'off',
     mutate: ['lib/**/*.js'],
     babelrcFile: '.babelrc',
-    maxConcurrentTestRunners: 8,
+    // maxConcurrentTestRunners: 8,
     timeoutMs: 50000,
   });
 };
