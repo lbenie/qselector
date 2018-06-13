@@ -1,5 +1,11 @@
+## <small>2.0.3 (2018-06-13)</small>
+
+
+
+
 ## <small>2.0.2 (2018-06-13)</small>
 
+* docs(changelog): bumping version to 2.0.2 ([640742b](https://github.com/lbenie/qselector/commit/640742b))
 * chore(stryker): fix tests timeout on travis ([839e3c3](https://github.com/lbenie/qselector/commit/839e3c3))
 * chore(travis): add timeout to stryker ([238aa14](https://github.com/lbenie/qselector/commit/238aa14))
 * chore(travis): stryker concurrent test number ([ae09712](https://github.com/lbenie/qselector/commit/ae09712))
