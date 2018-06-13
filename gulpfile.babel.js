@@ -1,14 +1,14 @@
-import gulp from 'gulp';
-import changelog from 'gulp-conventional-changelog';
-import git from 'gulp-git';
-import minimist from 'minimist';
-import bump from 'gulp-bump';
-import log from 'fancy-log';
-import runSequence from 'run-sequence';
-import fs from 'fs';
 import github from 'conventional-github-releaser';
 import dotenv from 'dotenv';
+import log from 'fancy-log';
+import fs from 'fs';
+import gulp from 'gulp';
+import bump from 'gulp-bump';
+import changelog from 'gulp-conventional-changelog';
+import git from 'gulp-git';
 import ts from 'gulp-typescript';
+import minimist from 'minimist';
+import runSequence from 'run-sequence';
 
 const project = ts.createProject('tsconfig.json');
 
@@ -44,10 +44,13 @@ gulp.task('bump-version', () =>
     }).on('error', log.error))
     .pipe(gulp.dest('./')));
 
-gulp.task('commit-changelog', () => gulp
-  .src('.')
-  .pipe(git.add())
-  .pipe(git.commit(`docs(changelog): bumping version to ${version()}`)));
+gulp.task('commit-changelog', (done) => {
+  gulp
+    .src('.')
+    .pipe(git.add())
+    .pipe(git.commit(`docs(changelog): bumping version to ${version()}`));
+  done();
+});
 
 gulp.task('push-changes', done => git.push('origin', 'master', done));
 

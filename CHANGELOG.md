@@ -1,5 +1,11 @@
+## <small>2.0.4 (2018-06-13)</small>
+
+
+
+
 ## <small>2.0.3 (2018-06-13)</small>
 
+* docs(changelog): bumping version to 2.0.3 ([9bd7b33](https://github.com/lbenie/qselector/commit/9bd7b33))
 
 
 
