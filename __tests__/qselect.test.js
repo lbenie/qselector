@@ -1,7 +1,8 @@
 import isDom from 'is-dom';
+
 import { $, $$ } from '../lib';
 
-const invalidSelector = 'The string "", is not a valid CSS selector';
+const invalidSelector = '\'\' is not a valid selector';
 const errorSelector = 'Selector does not exists in the DOM';
 
 describe('qselect', () => {
