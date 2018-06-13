@@ -1,6 +1,15 @@
+<a name="2.0.1"></a>
+## <small>2.0.1 (2018-06-13)</small>
+
+* chore: update typescript, npm and travis configuration files ([aff7bab](https://github.com/lbenie/qselector/commit/aff7bab))
+* chore(npm): fix typings ([382923a](https://github.com/lbenie/qselector/commit/382923a))
+
+
+
 <a name="2.0.0"></a>
 ## 2.0.0 (2018-06-01)
 
+* docs(changelog): bumping version to 2.0.0 ([2fa1cc0](https://github.com/lbenie/qselector/commit/2fa1cc0))
 * feat: add support for typescript ([9d8dc17](https://github.com/lbenie/qselector/commit/9d8dc17))
 
 
