@@ -8,5 +8,6 @@ module.exports = (config) => {
     mutate: ['lib/**/*.js'],
     babelrcFile: '.babelrc',
     maxConcurrentTestRunners: 8,
+    timeoutMs: 50000,
   });
 };
