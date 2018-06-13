@@ -1,9 +1,11 @@
+## <small>2.0.7 (2018-06-13)</small>
+
+* fix(husky): fixes deploy command ([e8a2889](https://github.com/lbenie/qselector/commit/e8a2889))
+* docs(changelog): bumping version to 2.0.6 ([e0d8779](https://github.com/lbenie/qselector/commit/e0d8779))
+
+
+
 ## <small>2.0.6 (2018-06-13)</small>
-
-
-
-
-## <small>2.0.5 (2018-06-13)</small>
 
 * docs(changelog): bumping version to 2.0.4 ([3021597](https://github.com/lbenie/qselector/commit/3021597))
 * docs(changelog): bumping version to 2.0.5 ([1759f48](https://github.com/lbenie/qselector/commit/1759f48))
