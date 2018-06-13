@@ -2,11 +2,6 @@ import isDom from 'is-dom';
 
 const errorSelector = 'Selector does not exists in the DOM';
 
-interface IQueryType {
-  single: boolean;
-  multiple: boolean;
-}
-
 const queryType = {
   single: true,
   multiple: false,
@@ -55,7 +50,6 @@ const core = (type: boolean, ...args: Array<any>): HTMLElement | Array<HTMLEleme
 
   throw new Error(errorSelector);
 };
-
 
 const $ = (el: any, selector?: any) => core(queryType.single, el, selector);
 

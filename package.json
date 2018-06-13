@@ -2,21 +2,10 @@
   "name": "qselector",
   "version": "2.0.0",
   "description": "Aliases for querySelector & querySelectorAll",
-  "keywords": [
-    "query",
-    "querySelector",
-    "querySelectorAll",
-    "selector",
-    "javascript",
-    "browser"
-  ],
-  "main": "lib/index.js",
-  "files": [
-    "lib/index.js"
-  ],
-  "types": [
-    "lib/index.d.ts"
-  ],
+  "keywords": ["query", "querySelector", "querySelectorAll", "selector", "javascript", "browser"],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": ["./lib/"],
   "bugs": {
     "url": "https://github.com/lbenie/qselector/issues"
   },
@@ -83,7 +72,8 @@
     "stryker-javascript-mutator": "^0.6.3",
     "stryker-jest-runner": "^0.6.0",
     "ts-jest": "^22.4.6",
-    "typescript": "^2.9.1"
+    "typescript": "^2.9.1",
+    "typescript-eslint-parser": "^16.0.0"
   },
   "engines": {
     "node": ">=8"
