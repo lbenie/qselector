@@ -1,8 +1,15 @@
+## <small>2.0.9 (2018-06-14)</small>
+
+* ci:skip ([eb6ea59](https://github.com/lbenie/qselector/commit/eb6ea59))
+
+
+
 ## <small>2.0.8 (2018-06-14)</small>
 
+* docs(changelog): bumping version to 2.0.7 ([c2c325a](https://github.com/lbenie/qselector/commit/c2c325a))
+* docs(changelog): bumping version to 2.0.8 ([1d79e92](https://github.com/lbenie/qselector/commit/1d79e92))
 * fix(gulp): don't verify commit for release ([08b77b3](https://github.com/lbenie/qselector/commit/08b77b3))
 * chore(fix gulp): fix gulp ([dd0f5cf](https://github.com/lbenie/qselector/commit/dd0f5cf))
-* docs(changelog): bumping version to 2.0.7 ([c2c325a](https://github.com/lbenie/qselector/commit/c2c325a))
 
 
 
