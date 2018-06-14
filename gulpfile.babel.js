@@ -36,21 +36,17 @@ gulp.task('github-release', done =>
     token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN,
   }, { preset: process.env.PRESET || 'eslint' }, done));
 
-gulp.task('bump-version', () =>
-  gulp
-    .src('package.json')
-    .pipe(bump({
-      type: opts.semver,
-    }).on('error', log.error))
-    .pipe(gulp.dest('./')));
+gulp.task('bump-version', () => gulp
+  .src('package.json')
+  .pipe(bump({
+    type: opts.semver,
+  }).on('error', log.error))
+  .pipe(gulp.dest('./')));
 
-gulp.task('commit-changelog', (done) => {
-  gulp
-    .src('.')
-    .pipe(git.add())
-    .pipe(git.commit(`docs(changelog): bumping version to ${version()}`));
-  done();
-});
+gulp.task('commit-changelog', () => gulp
+  .src('.')
+  .pipe(git.add())
+  .pipe(git.commit(`docs(changelog): bumping version to ${version()}`)));
 
 gulp.task('push-changes', done => git.push('origin', 'master', done));
 
