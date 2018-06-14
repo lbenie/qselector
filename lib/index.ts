@@ -18,9 +18,14 @@ const isNanOrInfinite = (el: any, selector: any) => {
   return result.some(x => x);
 };
 
-const errorHanler = (isSingle: boolean, { el, selector }: { el: any, selector: any }): boolean => {
-  const root = document.querySelector(el);
+const errorHanler = (isSingle: boolean, { el, selector }:
+{ el: string, selector: string | undefined }): boolean => {
+  const root = document.querySelector<HTMLElement>(el);
   const isNan = isNanOrInfinite(el, selector);
+
+  if (!root) {
+    return false;
+  }
 
   if (isNan && isNan.toString().length !== 0) {
     throw new Error(errorSelector);
@@ -36,10 +41,14 @@ const errorHanler = (isSingle: boolean, { el, selector }: { el: any, selector: a
 };
 
 
-const core = (type: boolean, ...args: Array<any>): HTMLElement | Array<HTMLElement> | Error => {
+const core = (type: boolean, ...args: Array<string | undefined>) => {
   const isSingle = type === queryType.single;
   const [el, selector] = args;
-  const root = document.querySelector(el);
+  const root = document.querySelector<HTMLElement>(el || '');
+
+  if (!root || !el) {
+    throw new Error(errorSelector);
+  }
 
   if (errorHanler(isSingle, { el, selector })) {
     if (selector) {
@@ -51,9 +60,9 @@ const core = (type: boolean, ...args: Array<any>): HTMLElement | Array<HTMLEleme
   throw new Error(errorSelector);
 };
 
-const $ = (el: any, selector?: any) => core(queryType.single, el, selector);
+const $ = (el: string, selector?: string) => core(queryType.single, el, selector);
 
-const $$ = (el: any, selector?: any) => core(queryType.multiple, el, selector);
+const $$ = (el: string, selector?: string) => core(queryType.multiple, el, selector);
 
 export {
   $,

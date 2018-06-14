@@ -45,19 +45,19 @@ describe('qselect', () => {
       it('should throw if el is undefined', () => {
         expect(() => {
           $(undefined);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should be null if el is null', () => {
         expect(() => {
           $(null);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should throw if el is Nan', () => {
         expect(() => {
           $(NaN);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should throw if el is Infinity', () => {
@@ -215,19 +215,19 @@ describe('qselect', () => {
       it('should throw if el is undefined', () => {
         expect(() => {
           $$(undefined);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should throw if el is null', () => {
         expect(() => {
           $$(null);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should throw if el is Nan', () => {
         expect(() => {
           $$(NaN);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should throw if el is Infinity', () => {
@@ -299,13 +299,13 @@ describe('qselect', () => {
       it('should throw if el is undefined and selector is undefined', () => {
         expect(() => {
           $$(undefined, undefined);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should throw if el is null and selector is null', () => {
         expect(() => {
           $$(null, null);
-        }).toThrowError(errorSelector);
+        }).toThrowError(invalidSelector);
       });
 
       it('should be a node list if el exists and selector is undefined', () => {
