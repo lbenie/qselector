@@ -1,5 +1,12 @@
+## 2.1.0 (2018-06-14)
+
+* fix(npm): fix resolving npm files ([6e9f705](https://github.com/lbenie/qselector/commit/6e9f705))
+
+
+
 ## <small>2.0.10 (2018-06-14)</small>
 
+* docs(changelog): bumping version to 2.0.10 ([9a8207e](https://github.com/lbenie/qselector/commit/9a8207e))
 * ci:skip ([ea44af4](https://github.com/lbenie/qselector/commit/ea44af4))
 
 
