@@ -33,6 +33,7 @@ gulp.task('changelog', () => gulp
 gulp.task('github-release', done => github({
   type: 'oauth',
   token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN,
+  url: 'https://api.github.com/',
 }, { preset: process.env.PRESET || 'eslint' }, done));
 
 gulp.task('bump-version', () => gulp
