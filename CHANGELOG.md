@@ -1,3 +1,11 @@
+## <small>2.0.8 (2018-06-14)</small>
+
+* fix(gulp): don't verify commit for release ([08b77b3](https://github.com/lbenie/qselector/commit/08b77b3))
+* chore(fix gulp): fix gulp ([dd0f5cf](https://github.com/lbenie/qselector/commit/dd0f5cf))
+* docs(changelog): bumping version to 2.0.7 ([c2c325a](https://github.com/lbenie/qselector/commit/c2c325a))
+
+
+
 ## <small>2.0.7 (2018-06-13)</small>
 
 * fix(husky): fixes deploy command ([e8a2889](https://github.com/lbenie/qselector/commit/e8a2889))
