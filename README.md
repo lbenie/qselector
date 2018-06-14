@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/lbenie/qselector.svg?branch=master)](https://travis-ci.org/lbenie/qselector)
 [![Mutation testing badge](https://badge.stryker-mutator.io/github.com/lbenie/qselector/master)](https://stryker-mutator.github.io)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
+[![Known Vulnerabilities](https://snyk.io/test/github/lbenie/qselector/badge.svg?targetFile=package.json)](https://snyk.io/test/github/lbenie/qselector?targetFile=package.json)
 
 qselector (query selector) is just a small package to create aliases for `querySelector` and `querySelectorAll` to `$` and `$$` respectively.
 
@@ -23,7 +23,7 @@ The api is pretty simple. Each functions receive a DOMElement and returns either
 
 **$(el, selector)**
 
-Returns the first match of `selector` on `el` and its children 
+Returns the first match of `selector` on `el` and its children
 ```js
   let node = $('div');
   /* node value
