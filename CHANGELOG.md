@@ -1,5 +1,12 @@
+## 2.2.0 (2018-06-14)
+
+* feat(typings): provides better intellisense ([c5fda8c](https://github.com/lbenie/qselector/commit/c5fda8c))
+
+
+
 ## 2.1.0 (2018-06-14)
 
+* docs(changelog): bumping version to 2.1.0 ([4acabe8](https://github.com/lbenie/qselector/commit/4acabe8))
 * fix(npm): fix resolving npm files ([6e9f705](https://github.com/lbenie/qselector/commit/6e9f705))
 
 
