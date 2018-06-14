@@ -1,5 +1,12 @@
+## <small>2.0.10 (2018-06-14)</small>
+
+* ci:skip ([ea44af4](https://github.com/lbenie/qselector/commit/ea44af4))
+
+
+
 ## <small>2.0.9 (2018-06-14)</small>
 
+* docs(changelog): bumping version to 2.0.9 ([a48197a](https://github.com/lbenie/qselector/commit/a48197a))
 * ci:skip ([eb6ea59](https://github.com/lbenie/qselector/commit/eb6ea59))
 
 
