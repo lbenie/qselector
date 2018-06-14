@@ -30,11 +30,11 @@ gulp.task('changelog', () => gulp
   .pipe(changelog({ preset: process.env.PRESET, releaseCount: 0 }))
   .pipe(gulp.dest('.')));
 
-gulp.task('github-release', done =>
-  github({
-    type: 'oauth',
-    token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN,
-  }, { preset: process.env.PRESET || 'eslint' }, done));
+gulp.task('github-release', done => github({
+  type: 'oauth',
+  token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN,
+  url: 'https://api.github.com/',
+}, { preset: process.env.PRESET || 'eslint' }, done));
 
 gulp.task('bump-version', () => gulp
   .src('package.json')
@@ -46,12 +46,14 @@ gulp.task('bump-version', () => gulp
 gulp.task('commit-changelog', () => gulp
   .src('.')
   .pipe(git.add())
-  .pipe(git.commit(`docs(changelog): bumping version to ${version()}`)));
+  .pipe(git.commit(`docs(changelog): bumping version to ${version()}`, {
+    args: '--no-verify',
+  })));
 
 gulp.task('push-changes', done => git.push('origin', 'master', done));
 
-gulp.task('create-new-tag', done =>
-  git.tag(`${version()}`, `Created Tag for version: ${version()}`, (err) => {
+gulp.task('create-new-tag', done => git
+  .tag(`${version()}`, `Created Tag for version: ${version()}`, (err) => {
     if (err) {
       return done(err);
     }
@@ -60,14 +62,17 @@ gulp.task('create-new-tag', done =>
     }, done);
   }));
 
-gulp.task('release', done =>
-  runSequence('typescript', 'bump-version', 'changelog', 'commit-changelog', 'push-changes', 'create-new-tag', 'github-release', (err) => {
+gulp.task('release', done => runSequence(
+  'typescript', 'bump-version',
+  'changelog', 'commit-changelog', 'push-changes',
+  'create-new-tag', 'github-release', (err) => {
     if (err) {
       log.error(err.message);
     } else {
       log('RELEASE FINISHED SUCCESSFULLY');
     }
     done(err);
-  }));
+  },
+));
 
 gulp.task('default', ['release']);
