@@ -1,5 +1,14 @@
+## <small>2.2.1 (2018-07-27)</small>
+
+* chore($npm): add new token to travis ([4c9e126](https://github.com/lbenie/qselector/commit/4c9e126))
+* skip ci ([b49d9ee](https://github.com/lbenie/qselector/commit/b49d9ee))
+* skip ci ([af9f179](https://github.com/lbenie/qselector/commit/af9f179))
+
+
+
 ## 2.2.0 (2018-06-14)
 
+* docs(changelog): bumping version to 2.2.0 ([09bfa2b](https://github.com/lbenie/qselector/commit/09bfa2b))
 * feat(typings): provides better intellisense ([c5fda8c](https://github.com/lbenie/qselector/commit/c5fda8c))
 
 
