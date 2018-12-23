@@ -6687,9 +6687,10 @@ stryker-api@^0.18.0:
   dependencies:
     tslib "~1.9.3"
 
-stryker-babel-transpiler@^0.7.0:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/stryker-babel-transpiler/-/stryker-babel-transpiler-0.7.2.tgz#80f8b31b2e5fcba34959112e4733b4737c06b902"
+stryker-babel-transpiler@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/stryker-babel-transpiler/-/stryker-babel-transpiler-0.8.0.tgz#cf31641afbb696af26329bad0f29863257eb4c8a"
+  integrity sha512-clp+Bhms/r/TiNVDEsiDndP1a/EOuxeyaoa/rilCPoWbFkha5fnVX6VDhF796moekx12M7kfjwjwqVVKM/XzKg==
   dependencies:
     babel-core "6.26.3"
     minimatch "~3.0.4"
