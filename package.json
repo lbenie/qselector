@@ -27,14 +27,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gulp typescript",
     "test": "jest --config jest.config.js --colors && stryker run",
     "test:dev": "cross-env BABEL_ENV=test jest --config jest.config.js --watch",
     "changelog": "conventional-changelog  -i CHANGELOG.md -s",
     "commit": "git-cz",
     "release-major": "gulp release --semver major",
     "release-minor": "gulp release --semver minor",
-    "release-patch": "gulp release"
+    "release-patch": "gulp release",
+    "build": "npm run build:es2015 && npm run build:esm && npm run build:cjs",
+    "build:es2015": "tsc --module es2015 --target es2015 --outDir dist/es2015",
+    "build:esm": "tsc --downlevelIteration --module es2015 --target es5 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs"
   },
   "dependencies": {
     "is-dom": "^1.0.9"
