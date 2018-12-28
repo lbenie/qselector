@@ -54,7 +54,8 @@ gulp.task('push-changes', done => git.push('origin', 'master', done));
 
 gulp.task('create-new-tag', done => git
   .tag(`${version()}`, `Created Tag for version: ${version()}`, (err) => {
-    if (err) {
+    if (err)
+    {
       return done(err);
     }
     return git.push('origin', 'master', {
@@ -63,16 +64,18 @@ gulp.task('create-new-tag', done => git
   }));
 
 gulp.task('release', done => runSequence(
-  'typescript', 'bump-version',
+  'bump-version',
   'changelog', 'commit-changelog', 'push-changes',
   'create-new-tag', 'github-release', (err) => {
-    if (err) {
+    if (err)
+    {
       log.error(err.message);
-    } else {
+    } else
+    {
       log('RELEASE FINISHED SUCCESSFULLY');
     }
     done(err);
   },
 ));
 
-gulp.task('default', ['release']);
+gulp.task('default', [ 'release' ]);

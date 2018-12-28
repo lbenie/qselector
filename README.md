@@ -79,6 +79,16 @@ or
   $ npm install qselector --save
 ```
 
+### Usage
+
+```node
+  const qselector = require('qselector/dist/cjs')
+```
+
+```ts
+import qselector from 'qselector/dist/es2015')
+```
+
 ## License
 
 (MIT)
