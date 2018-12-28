@@ -1,7 +1,9 @@
 module.exports = {
-  '*.js': [
-    'eslint --fix',
-    'git add',
-  ],
+  linters: {
+    '*.js': [
+      'eslint --fix',
+      'git add',
+    ],
+  },
+  "ignore": [ "dist/**" ]
 };
-
