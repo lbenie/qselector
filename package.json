@@ -75,7 +75,7 @@
     "run-sequence": "^2.2.1",
     "stryker": "^0.26.1",
     "stryker-api": "^0.18.0",
-    "stryker-babel-transpiler": "^0.8.0",
+    "stryker-babel-transpiler": "^0.9.0",
     "stryker-baseline-reporter": "^1.0.3",
     "stryker-html-reporter": "^0.15.1",
     "stryker-javascript-mutator": "^0.13.0",
