@@ -70,7 +70,7 @@
     "gulp-typescript": "^5.0.0-alpha.1",
     "husky": "^1.0.0-rc.2",
     "jest": "^23.1.0",
-    "lint-staged": "^8.0.0",
+    "lint-staged": "^9.0.0",
     "minimist": "^1.2.0",
     "run-sequence": "^2.2.1",
     "stryker": "^0.26.1",
