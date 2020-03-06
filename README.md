@@ -7,7 +7,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/lbenie/qselector/badge.svg?targetFile=package.json)](https://snyk.io/test/github/lbenie/qselector?targetFile=package.json)
 [![npm](https://img.shields.io/npm/v/qselector.svg)](https://github.com/lbenie/qselector)
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/qselector.svg)](https://github.com/lbenie/qselector)
-[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/qselector.svg)](https://github.com/lbenie/qselector) [![Greenkeeper badge](https://badges.greenkeeper.io/lbenie/qselector.svg)](https://greenkeeper.io/)
+[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/qselector.svg)](https://github.com/lbenie/qselector) 
 
 qselector (query selector) is just a small package to create aliases for
 `querySelector` and `querySelectorAll` to `$` and `$$` respectively.
