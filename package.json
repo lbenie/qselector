@@ -40,7 +40,7 @@
     "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs"
   },
   "dependencies": {
-    "is-dom": "^1.0.9"
+    "is-dom": "^1.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
