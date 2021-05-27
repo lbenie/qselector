@@ -115,9 +115,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@commitlint/cli@^7.0.0":
+"@commitlint/cli@7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.0.0.tgz#3bf86d8ab2fbd5074c3114b7ba3f4b41b775f3dc"
+  integrity sha1-O/htirL71QdMMRS3uj9LQbd189w=
   dependencies:
     "@commitlint/format" "^7.0.0"
     "@commitlint/lint" "^7.0.0"
@@ -130,9 +131,10 @@
     lodash.pick "4.4.0"
     meow "^5.0.0"
 
-"@commitlint/config-conventional@^7.0.1":
+"@commitlint/config-conventional@7.0.1":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-7.0.1.tgz#276977f8ee60d8c56d7fdd43296af76dfee9b5f7"
+  integrity sha1-J2l3+O5g2MVtf91DKWr3bf7ptfc=
 
 "@commitlint/ensure@^7.0.0":
   version "7.0.0"
@@ -198,9 +200,10 @@
     conventional-changelog-angular "^1.3.3"
     conventional-commits-parser "^2.1.0"
 
-"@commitlint/prompt@^7.0.0":
+"@commitlint/prompt@7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-7.0.0.tgz#d44359fab0cfb61eb7ebb67a89da2651939f5102"
+  integrity sha1-1ENZ+rDPth6367Z6idomUZOfUQI=
   dependencies:
     "@commitlint/load" "^7.0.0"
     babel-runtime "^6.23.0"
@@ -809,9 +812,10 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@^23.0.1:
+babel-jest@23.0.1, babel-jest@^23.0.1:
   version "23.0.1"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.0.1.tgz#bbad3bf523fb202da05ed0a6540b48c84eed13a6"
+  integrity sha1-u6079SP7IC2gXtCmVAtIyE7tE6Y=
   dependencies:
     babel-plugin-istanbul "^4.1.6"
     babel-preset-jest "^23.0.1"
@@ -1062,9 +1066,10 @@ babel-polyfill@6.26.0, babel-polyfill@^6.3.14:
     core-js "^2.5.0"
     regenerator-runtime "^0.10.5"
 
-babel-preset-env@^1.6.1:
+babel-preset-env@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.7.0.tgz#dea79fa4ebeb883cd35dab07e260c1c9c04df77a"
+  integrity sha512-9OR2afuKDneX2/q2EurSftUYM0xGu4O2D9adAhVfADDhrYDaxXV0rBbevVYoY9n6nyX1PmQW/0jtpJvUNr9CHg==
   dependencies:
     babel-plugin-check-es2015-constants "^6.22.0"
     babel-plugin-syntax-trailing-function-commas "^6.22.0"
@@ -1097,9 +1102,10 @@ babel-preset-env@^1.6.1:
     invariant "^2.2.2"
     semver "^5.3.0"
 
-babel-preset-es2015@^6.24.1:
+babel-preset-es2015@6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-preset-es2015/-/babel-preset-es2015-6.24.1.tgz#d44050d6bc2c9feea702aaf38d727a0210538939"
+  integrity sha1-1EBQ1rwsn+6nAqrzjXJ6AhBTiTk=
   dependencies:
     babel-plugin-check-es2015-constants "^6.22.0"
     babel-plugin-transform-es2015-arrow-functions "^6.22.0"
@@ -1617,9 +1623,10 @@ commander@~2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
-commitizen@^3.0.0:
+commitizen@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-3.0.0.tgz#291cf7ce42e14468d37f046a5fbacf808b13840b"
+  integrity sha512-L7yueW4F+Uh0IUFSeANgLuFxxzJTlukJ7FpPBftGmIQRaYS+W+jz+/BLl9t/cdbumWAgfM/CdDw0gNPZLgGqSw==
   dependencies:
     cachedir "2.1.0"
     cz-conventional-changelog "2.1.0"
@@ -1851,6 +1858,22 @@ conventional-changelog-writer@^4.0.2:
     split "^1.0.0"
     through2 "^2.0.0"
 
+conventional-changelog@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-3.0.5.tgz#660a61c1c5c9c9ba967ff3d2f5e7e9d7e0680be6"
+  integrity sha512-JYSVGJbnOl9S2gkZwmoJ+wX2gxNVHodUmEiv+eIykeJBNX0zN5vJ3oa2xCvk2HiF7TZ+Les0eq/aX49dcymONA==
+  dependencies:
+    conventional-changelog-angular "^5.0.2"
+    conventional-changelog-atom "^2.0.1"
+    conventional-changelog-codemirror "^2.0.1"
+    conventional-changelog-core "^3.1.5"
+    conventional-changelog-ember "^2.0.2"
+    conventional-changelog-eslint "^3.0.1"
+    conventional-changelog-express "^2.0.1"
+    conventional-changelog-jquery "^3.0.4"
+    conventional-changelog-jshint "^2.0.1"
+    conventional-changelog-preset-loader "^2.0.2"
+
 conventional-changelog@^2.0.0, conventional-changelog@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-2.0.1.tgz#0d8f0f9668eaeaa5edd612896e7f3cc4385b31c9"
@@ -1866,21 +1889,6 @@ conventional-changelog@^2.0.0, conventional-changelog@^2.0.1:
     conventional-changelog-jscs "^0.1.0"
     conventional-changelog-jshint "^2.0.0"
     conventional-changelog-preset-loader "^2.0.0"
-
-conventional-changelog@^3.0.1:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-3.0.5.tgz#660a61c1c5c9c9ba967ff3d2f5e7e9d7e0680be6"
-  dependencies:
-    conventional-changelog-angular "^5.0.2"
-    conventional-changelog-atom "^2.0.1"
-    conventional-changelog-codemirror "^2.0.1"
-    conventional-changelog-core "^3.1.5"
-    conventional-changelog-ember "^2.0.2"
-    conventional-changelog-eslint "^3.0.1"
-    conventional-changelog-express "^2.0.1"
-    conventional-changelog-jquery "^3.0.4"
-    conventional-changelog-jshint "^2.0.1"
-    conventional-changelog-preset-loader "^2.0.2"
 
 conventional-commit-types@^2.0.0:
   version "2.2.0"
@@ -1936,9 +1944,10 @@ conventional-commits-parser@^3.0.1:
     through2 "^2.0.0"
     trim-off-newlines "^1.0.0"
 
-conventional-github-releaser@^3.1.2:
+conventional-github-releaser@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/conventional-github-releaser/-/conventional-github-releaser-3.1.2.tgz#c98ac86efb3caa0db0a2f7f039cc65d42ef535af"
+  integrity sha512-XsBbMgSXqnOUFG09TgNZ7Ki+pTv1ht8xSdH+ziEWRYrQMyA/OvdKdalwgjmloNawwZcR9GdySp91jqdGmBvUyA==
   dependencies:
     conventional-changelog "^2.0.0"
     dateformat "^3.0.0"
@@ -1998,9 +2007,10 @@ cosmiconfig@^5.0.2:
     js-yaml "^3.9.0"
     parse-json "^4.0.0"
 
-cross-env@^5.1.4:
+cross-env@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.2.0.tgz#6ecd4c015d5773e614039ee529076669b9d126f2"
+  integrity sha512-jtdNFfFW1hB7sMhr/H6rW1Z45LFqyI431m3qU6bFXcQ3Eh7LtBuG3h74o7ohHZ3crrRkkqHlo4jYHFPcjroANg==
   dependencies:
     cross-spawn "^6.0.5"
     is-windows "^1.0.0"
@@ -2043,7 +2053,7 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cz-conventional-changelog@2.1.0, cz-conventional-changelog@^2.1.0:
+cz-conventional-changelog@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cz-conventional-changelog/-/cz-conventional-changelog-2.1.0.tgz#2f4bc7390e3244e4df293e6ba351e4c740a7c764"
   dependencies:
@@ -2293,7 +2303,7 @@ dot-prop@^3.0.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@^7.0.0:
+dotenv@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-7.0.0.tgz#a2be3cd52736673206e8a85fb5210eea29628e7c"
   integrity sha512-M3NhsLbV1i6HuGzBUH8vXrtxOk+tWmzWKDMbAVSUp3Zsjm7ywFeuwrUXhmhQyRK1q5B5GGy7hcXPbj3bnfZg2g==
@@ -2443,9 +2453,10 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-airbnb@^17.0.0:
+eslint-config-airbnb@17.1.0:
   version "17.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-17.1.0.tgz#3964ed4bc198240315ff52030bf8636f42bc4732"
+  integrity sha512-R9jw28hFfEQnpPau01NO5K/JWMGLi6aymiF6RsnMURjTk+MqZKllCqGK/0tOvHkPi/NWSSOU2Ced/GX++YxLnw==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     object.assign "^4.1.0"
@@ -2465,9 +2476,10 @@ eslint-module-utils@^2.2.0:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-import@^2.10.0:
+eslint-plugin-import@2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.12.0.tgz#dad31781292d6664b25317fd049d2e2b2f02205d"
+  integrity sha1-2tMXgSktZmSyUxf9BJ0uKy8CIF0=
   dependencies:
     contains-path "^0.1.0"
     debug "^2.6.8"
@@ -2480,13 +2492,15 @@ eslint-plugin-import@^2.10.0:
     read-pkg-up "^2.0.0"
     resolve "^1.6.0"
 
-eslint-plugin-jest@^22.0.0:
+eslint-plugin-jest@22.0.0:
   version "22.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-22.0.0.tgz#87dc52bbdd47f37f23bf2b10bb8469458bb3ed68"
+  integrity sha512-YOj8cYI5ZXEZUrX2kUBLachR1ffjQiicIMBoivN7bXXHnxi8RcwNvmVzwlu3nTmjlvk5AP3kIpC5i8HcinmhPA==
 
-eslint-plugin-jsx-a11y@^6.0.3:
+eslint-plugin-jsx-a11y@6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.0.3.tgz#54583d1ae442483162e040e13cc31865465100e5"
+  integrity sha1-VFg9GuRCSDFi4EDhPMMYZUZRAOU=
   dependencies:
     aria-query "^0.7.0"
     array-includes "^3.0.3"
@@ -2496,9 +2510,10 @@ eslint-plugin-jsx-a11y@^6.0.3:
     emoji-regex "^6.1.0"
     jsx-ast-utils "^2.0.0"
 
-eslint-plugin-react@^7.7.0:
+eslint-plugin-react@7.9.1:
   version "7.9.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.9.1.tgz#101aadd15e7c7b431ed025303ac7b421a8e3dc15"
+  integrity sha512-uvq+2ZkiqzjwF+pMZ8xqIC3pChV4KviPvvPIyQOvKWnjtvyW3iGfHIRqVumw05L3itby0QGmA4VdBA9m1OdMmg==
   dependencies:
     doctrine "^2.1.0"
     has "^1.0.2"
@@ -2524,9 +2539,10 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^5.3.0:
+eslint@5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.5.0.tgz#8557fcceab5141a8197da9ffd9904f89f64425c6"
+  integrity sha512-m+az4vYehIJgl1Z0gb25KnFXeqQRdNreYsei1jdvkd9bB+UNQD3fsuiC2AWSQ56P+/t++kFSINZXFbfai+krOw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
@@ -2773,9 +2789,10 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
 
-fancy-log@^1.3.2:
+fancy-log@1.3.2, fancy-log@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/fancy-log/-/fancy-log-1.3.2.tgz#f41125e3d84f2e7d89a43d06d958c8f78be16be1"
+  integrity sha1-9BEl49hPLn2JpD0G2VjI94vha+E=
   dependencies:
     ansi-gray "^0.1.1"
     color-support "^1.1.3"
@@ -3348,9 +3365,10 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
-gulp-bump@^3.1.1:
+gulp-bump@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/gulp-bump/-/gulp-bump-3.1.1.tgz#8be187e47d41051b7530a807a3074030963c186d"
+  integrity sha512-4lVWz2L/8G2lYBjYGzql2BiVIa1Mml03YcHQc1pERk8jH/8nZbrdQ8dHABDnAcBNP4rKAh9AVycjNJ4/4AHkwQ==
   dependencies:
     bump-regex "^3.1.1"
     plugin-error "^0.1.2"
@@ -3382,9 +3400,10 @@ gulp-cli@^2.0.0:
     v8flags "^3.0.1"
     yargs "^7.1.0"
 
-gulp-conventional-changelog@^2.0.1:
+gulp-conventional-changelog@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/gulp-conventional-changelog/-/gulp-conventional-changelog-2.0.1.tgz#100c46f9982e45ef581f813ac6f2da93a9777005"
+  integrity sha512-qmY8NIR6sd/wP11HLZv1z/JvwnAjVe4sGFLiei5bNFLmOd5b6/2fDTi0ACiITWRaAosfAGH93iRXAaw9cYWRiw==
   dependencies:
     add-stream "^1.0.0"
     concat-stream "^1.6.0"
@@ -3394,9 +3413,10 @@ gulp-conventional-changelog@^2.0.1:
     plugin-error "^1.0.1"
     through2 "^2.0.0"
 
-gulp-git@^2.5.2:
+gulp-git@2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/gulp-git/-/gulp-git-2.7.0.tgz#f503fb6786a81ad2b816b4e3242fec80f494182e"
+  integrity sha512-y7Jg8OklbArDv0oP1Eot1MwEGCoMYJh/fq+Gd3dIZp6PNkyzHrNfi3aWHtMd4K+KI0ZetuV/Ile9rftaEDGRgQ==
   dependencies:
     any-shell-escape "^0.1.1"
     fancy-log "^1.3.2"
@@ -3407,9 +3427,10 @@ gulp-git@^2.5.2:
     through2 "^2.0.3"
     vinyl "^2.0.1"
 
-gulp-typescript@^5.0.0-alpha.1:
+gulp-typescript@5.0.0-alpha.1:
   version "5.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/gulp-typescript/-/gulp-typescript-5.0.0-alpha.1.tgz#a1add4d2dbb526a7c3dd156ffcb1a562d73090a3"
+  integrity sha512-B2Zfup9R5p/hvZowVWdthCt/vrDxiwIQ1Ehi/CsHb6qRB66PVhDeF6Yw/d6HF/3wtka/XxI9zsTjiRb+3bsrJQ==
   dependencies:
     ansi-colors "^2.0.1"
     plugin-error "^1.0.1"
@@ -3418,7 +3439,7 @@ gulp-typescript@^5.0.0-alpha.1:
     vinyl "^2.1.0"
     vinyl-fs "^3.0.3"
 
-gulp@^4.0.0:
+gulp@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/gulp/-/gulp-4.0.0.tgz#95766c601dade4a77ed3e7b2b6dc03881b596366"
   integrity sha1-lXZsYB2t5Kd+0+eyttwDiBtZY2Y=
@@ -3555,9 +3576,10 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^1.0.0-rc.2:
+husky@1.0.0-rc.8:
   version "1.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/husky/-/husky-1.0.0-rc.8.tgz#2fa25d0b89269f5b8bfa1ca001370fdb058e8792"
+  integrity sha512-BNy9GoP/nl8f/fw+8xf3WSgpYGKg0yy51TOYygZhX10gJH4dLuZjVJyiKmFKNrPbRnjo58g/I+hMKnKjHtntLA==
   dependencies:
     cosmiconfig "^5.0.2"
     execa "^0.9.0"
@@ -4431,9 +4453,10 @@ jest-worker@^23.0.1:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@^23.1.0:
+jest@23.1.0:
   version "23.1.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-23.1.0.tgz#bbb7f893100a11a742dd8bd0d047a54b0968ad1a"
+  integrity sha1-u7f4kxAKEadC3YvQ0EelSwlorRo=
   dependencies:
     import-local "^1.0.0"
     jest-cli "^23.1.0"
@@ -4668,9 +4691,10 @@ liftoff@^2.5.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-lint-staged@^8.0.0:
+lint-staged@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-8.0.0.tgz#65f0eaa2d9cc0a74de7be0c07c84fdff54d83ea0"
+  integrity sha512-nxUKs3yjTVHmsTPAb/GA4cUE8/+TNYl3M+t30A+ftPW3FqyUn/jUIIebCW8X5XaypbvNDEkwPzTQDD4ykBI9tQ==
   dependencies:
     chalk "^2.3.1"
     commander "^2.14.1"
@@ -6281,9 +6305,10 @@ run-node@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/run-node/-/run-node-1.0.0.tgz#46b50b946a2aa2d4947ae1d886e9856fd9cabe5e"
 
-run-sequence@^2.2.1:
+run-sequence@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/run-sequence/-/run-sequence-2.2.1.tgz#1ce643da36fd8c7ea7e1a9329da33fc2b8898495"
+  integrity sha512-qkzZnQWMZjcKbh3CNly2srtrkaO/2H/SI5f2eliMCapdRD3UhMrwjfOAZJAnZ2H8Ju4aBzFZkBGXUqFs9V0yxw==
   dependencies:
     chalk "^1.1.3"
     fancy-log "^1.3.2"
@@ -6739,9 +6764,10 @@ strip-json-comments@2.0.1, strip-json-comments@^2.0.1, strip-json-comments@~2.0.
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-stryker-api@^0.18.0:
+stryker-api@0.18.0:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/stryker-api/-/stryker-api-0.18.0.tgz#007ffdf870027e6d6e5bbe7c6a0f2666787a16f6"
+  integrity sha512-i7GS/RP1OqJrHisjtFaDQSj72GyIH3GZXUrlhQEzufd/df9JwI4binRpRk/9zmeobOpa6yqd8OTbyfMaYd5TBg==
   dependencies:
     tslib "~1.9.3"
 
@@ -6752,7 +6778,7 @@ stryker-api@^0.24.0:
   dependencies:
     tslib "~1.9.3"
 
-stryker-babel-transpiler@^0.9.0:
+stryker-babel-transpiler@0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/stryker-babel-transpiler/-/stryker-babel-transpiler-0.9.0.tgz#4ba47f0ee8a10cec238539c06238df1e173fcacf"
   integrity sha512-ivCL1FsNrimZqT6ljaAkQSQQ213+g+ExkhHJV0YnYyodPsEqOezOqYsimpcTolSUHLYewnK+TVbszzg9XoHYDA==
@@ -6761,18 +6787,20 @@ stryker-babel-transpiler@^0.9.0:
     minimatch "~3.0.4"
     stryker-api "^0.24.0"
 
-stryker-baseline-reporter@^1.0.3:
+stryker-baseline-reporter@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/stryker-baseline-reporter/-/stryker-baseline-reporter-1.0.3.tgz#c127144796ce1896766840cd8c7f13c8202936b8"
+  integrity sha512-HAxHj3y8fUo04IgoRT5ibgH5ucBJd5tZ5q9wg/5UYlKLAHGTqoJsY4qp1IvEGE4Gb39mJEXUtQ7Ht0edGxxaaA==
   dependencies:
     chalk "^2.3.0"
     lodash "^4.17.4"
     mz "^2.7.0"
     tempy "^0.2.1"
 
-stryker-html-reporter@^0.15.1:
+stryker-html-reporter@0.15.3:
   version "0.15.3"
   resolved "https://registry.yarnpkg.com/stryker-html-reporter/-/stryker-html-reporter-0.15.3.tgz#749298fb4f8369ae221b2ecc8e57716bef586818"
+  integrity sha512-pH1w4aR5klyHIsF0afa4kSSZI8EMsdEr61SeTyoifTFPLBnocULsQjWTz4tmNDVA+hJdo7KVGbPbws5KRQu6Jg==
   dependencies:
     file-url "~2.0.0"
     lodash "~4.17.10"
@@ -6781,7 +6809,7 @@ stryker-html-reporter@^0.15.1:
     rimraf "~2.6.1"
     typed-html "~0.6.0"
 
-stryker-javascript-mutator@^0.14.0:
+stryker-javascript-mutator@0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/stryker-javascript-mutator/-/stryker-javascript-mutator-0.14.0.tgz#49676934d1869fa6fe563cec2a915b190e22f0cc"
   integrity sha512-2OQXBH8iAjH89srI7EpJ3gy6OT9gsadplNYt1ZDBSpTKp8oue9KehBA6NvVUQSIuDQqlVFSntTmE8Hu3U56+FQ==
@@ -6793,15 +6821,17 @@ stryker-javascript-mutator@^0.14.0:
     stryker-api "^0.24.0"
     tslib "~1.9.3"
 
-stryker-jest-runner@^1.0.1:
+stryker-jest-runner@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/stryker-jest-runner/-/stryker-jest-runner-1.2.1.tgz#e23fccc05ef8df564a24506e09fb49f62fbdd34e"
+  integrity sha512-AKXFrP+7XkHn8qkDUn1VsvOEcPSVCu9E/fLauMOF9hpM8O6AEEYiWmzCPNe+MnOrlwXCPm9bLJj6KI9I73XY3w==
   dependencies:
     semver "~5.5.0"
 
-stryker@^0.26.1:
+stryker@0.26.2:
   version "0.26.2"
   resolved "https://registry.yarnpkg.com/stryker/-/stryker-0.26.2.tgz#80932990dc45d5b4900d52a6fc95e4930af73e5e"
+  integrity sha512-kMx6avQWqhZGagxZxY8hSdQ94Ej3/tgVafoFfVxxJ5Dzt9geF/F3ONjLLN9TXOZDPruE/cZXp5Y3jhnVbombdA==
   dependencies:
     chalk "~2.4.1"
     commander "~2.17.1"
@@ -7053,7 +7083,7 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
-ts-jest@^24.0.0:
+ts-jest@24.0.0:
   version "24.0.0"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-24.0.0.tgz#3f26bf2ec1fa584863a5a9c29bd8717d549efbf6"
   integrity sha512-o8BO3TkMREpAATaFTrXkovMsCpBl2z4NDBoLJuWZcJJj1ijI49UnvDMfVpj+iogn/Jl8Pbhuei5nc/Ti+frEHw==
@@ -7111,7 +7141,7 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript-eslint-parser@^22.0.0:
+typescript-eslint-parser@22.0.0:
   version "22.0.0"
   resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-22.0.0.tgz#f5e766c9b50711b03535e29a10b45f957e3c516a"
   integrity sha512-pD8D7oTeRwWvFVxK3PaY6FYAiZsuRXFkIc2+1xkwCT3NduySgCgjeAkR5/dnIWecOiFVcEHf4ypXurF02Q6Z3Q==
@@ -7128,9 +7158,10 @@ typescript-estree@18.0.0:
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
-typescript@^3.0.1:
+typescript@3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
+  integrity sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==
 
 ua-parser-js@^0.7.18:
   version "0.7.18"
