@@ -53,7 +53,7 @@
     "commitizen": "3.0.0",
     "conventional-changelog": "3.0.5",
     "conventional-github-releaser": "3.1.5",
-    "cross-env": "5.2.1",
+    "cross-env": "7.0.3",
     "cz-conventional-changelog": "2.1.0",
     "dotenv": "7.0.0",
     "eslint": "5.5.0",
