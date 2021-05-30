@@ -81,7 +81,7 @@
     "stryker-javascript-mutator": "0.14.0",
     "stryker-jest-runner": "1.2.1",
     "ts-jest": "24.3.0",
-    "typescript": "3.0.3",
+    "typescript": "3.9.9",
     "typescript-eslint-parser": "22.0.0"
   },
   "engines": {
