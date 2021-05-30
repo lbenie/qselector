@@ -1410,12 +1410,12 @@ builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
-bump-regex@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/bump-regex/-/bump-regex-3.1.1.tgz#fc2ee36071cbc06959fa68707f2e6b40abe89edf"
+bump-regex@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/bump-regex/-/bump-regex-4.1.0.tgz#b9f3619e54d28c9e4cf5e30265503bb20bff3c1d"
+  integrity sha512-75Kr/Iw6lqnOKF/7YpE0WyOMBaaSpdrXTquIxR0qbTgZxwJos6563zNSn+w/LPJUoL4DXq20QX9AQy4+UJbyhw==
   dependencies:
     semver "^5.1.0"
-    xtend "^4.0.1"
 
 cache-base@^1.0.1:
   version "1.0.1"
@@ -3664,13 +3664,13 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
-gulp-bump@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/gulp-bump/-/gulp-bump-3.1.1.tgz#8be187e47d41051b7530a807a3074030963c186d"
-  integrity sha512-4lVWz2L/8G2lYBjYGzql2BiVIa1Mml03YcHQc1pERk8jH/8nZbrdQ8dHABDnAcBNP4rKAh9AVycjNJ4/4AHkwQ==
+gulp-bump@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-bump/-/gulp-bump-3.2.0.tgz#ab771ec7cf5c5bb3a8fae24ba21cef96855a6e15"
+  integrity sha512-j3Yvi0QQZEN1HsXArQCBMdX5jedQZ1Cul3W1VZrvKal/Z4Slb6Z7UQLQyPaLm0heNdJKCjpKHgkYSR8VhfPlTA==
   dependencies:
-    bump-regex "^3.1.1"
-    plugin-error "^0.1.2"
+    bump-regex "^4.1.0"
+    plugin-error "^1.0.1"
     plugin-log "^0.1.0"
     semver "^5.3.0"
     through2 "^2.0.1"
@@ -8342,7 +8342,7 @@ xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
 
-xtend@^4.0.1, xtend@~4.0.0, xtend@~4.0.1:
+xtend@~4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
