@@ -68,7 +68,7 @@
     "gulp-conventional-changelog": "2.0.35",
     "gulp-git": "2.10.1",
     "gulp-typescript": "5.0.1",
-    "husky": "7.0.2",
+    "husky": "7.0.4",
     "jest": "27.3.1",
     "lint-staged": "11.2.3",
     "minimist": "1.2.5",
