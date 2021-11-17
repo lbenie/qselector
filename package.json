@@ -45,7 +45,7 @@
   "devDependencies": {
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
-    "@commitlint/prompt": "14.1.0",
+    "@commitlint/prompt": "14.2.0",
     "babel-core": "6.26.3",
     "babel-jest": "27.3.1",
     "babel-preset-env": "1.7.0",
