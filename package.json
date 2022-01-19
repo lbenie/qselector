@@ -43,7 +43,7 @@
     "is-dom": "^1.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.0.2",
+    "@commitlint/cli": "16.0.3",
     "@commitlint/config-conventional": "16.0.0",
     "@commitlint/prompt": "16.0.0",
     "babel-core": "6.26.3",
