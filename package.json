@@ -43,9 +43,9 @@
     "is-dom": "^1.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.2.1",
+    "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
-    "@commitlint/prompt": "16.2.1",
+    "@commitlint/prompt": "16.2.3",
     "babel-core": "6.26.3",
     "babel-jest": "27.5.1",
     "babel-preset-env": "1.7.0",
