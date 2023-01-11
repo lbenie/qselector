@@ -80,7 +80,7 @@
     "stryker-html-reporter": "0.18.1",
     "stryker-javascript-mutator": "0.14.1",
     "stryker-jest-runner": "1.4.1",
-    "ts-jest": "29.0.3",
+    "ts-jest": "29.0.4",
     "typescript": "4.9.4",
     "typescript-eslint-parser": "22.0.0"
   },
